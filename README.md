@@ -1,2 +1,2 @@
-# PakVerify-FYP
-AI-powered Identity Verification SDK
+# Identra
+A Reusable Identity Verification SDK for Pakistani CNIC Scanning and Face Liveness Detection
