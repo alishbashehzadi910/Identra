@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="220dp"
+    android:height="165dp"
+    android:viewportWidth="220"
+    android:viewportHeight="165">
+
+    <!-- Soft Light-Blue Circle Backdrop -->
+    <path
+        android:fillColor="#EBF3FF"
+        android:pathData="M110,12 A70,70 0 1,1 109.9,12 Z" />
+
+    <!-- Tilted Clipboard Document on Left -->
+    <group
+        android:pivotX="85"
+        android:pivotY="85"
+        android:rotation="-4">
+
+        <!-- Soft Shadow -->
+        <path
+            android:fillColor="#140755C9"
+            android:pathData="M46,32 L118,32 A10,10 0 0,1 128,42 L128,136 A10,10 0 0,1 118,146 L46,146 A10,10 0 0,1 36,136 L36,42 A10,10 0 0,1 46,32 Z" />
+
+        <!-- White Clipboard Sheet -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeColor="#E2E8F0"
+            android:strokeWidth="1"
+            android:pathData="M44,28 L116,28 A10,10 0 0,1 126,38 L126,132 A10,10 0 0,1 116,142 L44,142 A10,10 0 0,1 34,132 L34,38 A10,10 0 0,1 44,28 Z" />
+
+        <!-- Dark Navy Top Clip -->
+        <path
+            android:fillColor="#10275B"
+            android:pathData="M66,22 L94,22 A4,4 0 0,1 98,26 L98,32 A4,4 0 0,1 94,36 L66,36 A4,4 0 0,1 62,32 L62,26 A4,4 0 0,1 66,22 Z" />
+
+        <!-- Row 1: Blue Check Box + Gray Line -->
+        <path
+            android:fillColor="#0755C9"
+            android:pathData="M46,48 L58,48 A3,3 0 0,1 61,51 L61,63 A3,3 0 0,1 58,66 L46,66 A3,3 0 0,1 43,63 L43,51 A3,3 0 0,1 46,48 Z" />
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="#00000000"
+            android:pathData="M48,57 L51,60 L56.5,54" />
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M69,55 L112,55 A2,2 0 0,1 114,57 L114,58 A2,2 0 0,1 112,60 L69,60 A2,2 0 0,1 67,58 L67,57 A2,2 0 0,1 69,55 Z" />
+
+        <!-- Row 2: Blue Check Box + Gray Line -->
+        <path
+            android:fillColor="#0755C9"
+            android:pathData="M46,76 L58,76 A3,3 0 0,1 61,79 L61,91 A3,3 0 0,1 58,94 L46,94 A3,3 0 0,1 43,91 L43,79 A3,3 0 0,1 46,76 Z" />
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="#00000000"
+            android:pathData="M48,85 L51,88 L56.5,82" />
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M69,83 L106,83 A2,2 0 0,1 108,85 L108,86 A2,2 0 0,1 106,88 L69,88 A2,2 0 0,1 67,86 L67,85 A2,2 0 0,1 69,83 Z" />
+
+        <!-- Row 3: Blue Check Box + Gray Line -->
+        <path
+            android:fillColor="#0755C9"
+            android:pathData="M46,104 L58,104 A3,3 0 0,1 61,107 L61,119 A3,3 0 0,1 58,122 L46,122 A3,3 0 0,1 43,119 L43,107 A3,3 0 0,1 46,104 Z" />
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="#00000000"
+            android:pathData="M48,113 L51,116 L56.5,110" />
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M69,111 L110,111 A2,2 0 0,1 112,113 L112,114 A2,2 0 0,1 110,116 L69,116 A2,2 0 0,1 67,114 L67,113 A2,2 0 0,1 69,111 Z" />
+    </group>
+
+    <!-- Shield on Right Side (Dark Blue Outer Border, Circle-Matching Interior) -->
+    <path
+        android:fillColor="#EBF3FF"
+        android:strokeColor="#0755C9"
+        android:strokeWidth="3"
+        android:strokeLineJoin="round"
+        android:pathData="M158,66 L140,73.5 L140,87.5 C140,99.5 147.6,110.2 158,113 C168.4,110.2 176,99.5 176,87.5 L176,73.5 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M151,89 L156,94 L165,84" />
+
+</vector>
