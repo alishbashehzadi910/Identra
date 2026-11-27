@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="210dp"
+    android:viewportWidth="300"
+    android:viewportHeight="210">
+
+    <!-- Subtle Orbit Rings -->
+    <path
+        android:strokeColor="#DCE8FA"
+        android:strokeWidth="1.2"
+        android:fillColor="#00000000"
+        android:pathData="M150,25 A125,80 0 1,1 149.9,25 Z" />
+    <path
+        android:strokeColor="#E4EEFC"
+        android:strokeWidth="1"
+        android:fillColor="#00000000"
+        android:pathData="M150,38 A105,67 0 1,1 149.9,38 Z" />
+
+    <!-- Tilted ID Card Group -->
+    <group
+        android:pivotX="150"
+        android:pivotY="105"
+        android:rotation="-4">
+
+        <!-- Soft Card Shadow -->
+        <path
+            android:fillColor="#140755C9"
+            android:pathData="M62,54 L238,54 A14,14 0 0,1 252,68 L252,152 A14,14 0 0,1 238,166 L62,166 A14,14 0 0,1 48,152 L48,68 A14,14 0 0,1 62,54 Z" />
+
+        <!-- White Card Body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeColor="#E2E8F0"
+            android:strokeWidth="1"
+            android:pathData="M60,50 L236,50 A14,14 0 0,1 250,64 L250,148 A14,14 0 0,1 236,162 L60,162 A14,14 0 0,1 46,148 L46,64 A14,14 0 0,1 60,50 Z" />
+
+        <!-- Mini Blue Shield Top Left -->
+        <path
+            android:fillColor="#0755C9"
+            android:pathData="M66,61 L60,63.5 L60,68.5 C60,72.5 62.6,76 66,77 C69.4,76 72,72.5 72,68.5 L72,63.5 Z" />
+
+        <!-- Mini "Identra" Brand Bar Next to Shield -->
+        <path
+            android:fillColor="#0755C9"
+            android:pathData="M78,66 L108,66 A2,2 0 0,1 110,68 L110,69 A2,2 0 0,1 108,71 L78,71 A2,2 0 0,1 76,69 L76,68 A2,2 0 0,1 78,66 Z" />
+
+        <!-- Gold Chip Top Right -->
+        <path
+            android:fillColor="#FBBF24"
+            android:pathData="M214,62 L228,62 A3,3 0 0,1 231,65 L231,73 A3,3 0 0,1 228,76 L214,76 A3,3 0 0,1 211,73 L211,65 A3,3 0 0,1 214,62 Z" />
+
+        <!-- Person Photo Box -->
+        <path
+            android:fillColor="#EAF2FF"
+            android:pathData="M66,86 L104,86 A8,8 0 0,1 112,94 L112,126 A8,8 0 0,1 104,134 L66,134 A8,8 0 0,1 58,126 L58,94 A8,8 0 0,1 66,86 Z" />
+
+        <!-- Person Head & Shoulders -->
+        <path
+            android:strokeColor="#0755C9"
+            android:strokeWidth="2"
+            android:fillColor="#00000000"
+            android:pathData="M85,97 A6,6 0 1,1 84.9,97 Z" />
+        <path
+            android:strokeColor="#0755C9"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M74,124 C74,117 79,113 85,113 C91,113 96,117 96,124" />
+
+        <!-- Card Text Placeholder Lines -->
+        <path
+            android:fillColor="#0755C9"
+            android:pathData="M124,90 L176,90 A2,2 0 0,1 178,92 L178,93 A2,2 0 0,1 176,95 L124,95 A2,2 0 0,1 122,93 L122,92 A2,2 0 0,1 124,90 Z" />
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M124,103 L204,103 A2,2 0 0,1 206,105 L206,106 A2,2 0 0,1 204,108 L124,108 A2,2 0 0,1 122,106 L122,105 A2,2 0 0,1 124,103 Z" />
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M124,115 L192,115 A2,2 0 0,1 194,117 L194,118 A2,2 0 0,1 192,120 L124,120 A2,2 0 0,1 122,118 L122,117 A2,2 0 0,1 124,115 Z" />
+        <path
+            android:fillColor="#E2E8F0"
+            android:pathData="M124,127 L168,127 A2,2 0 0,1 170,129 L170,130 A2,2 0 0,1 168,132 L124,132 A2,2 0 0,1 122,130 L122,129 A2,2 0 0,1 124,127 Z" />
+
+        <!-- Bottom Barcode Bars -->
+        <path
+            android:fillColor="#94A3B8"
+            android:pathData="M62,143 L64,143 L64,153 L62,153 Z M67,143 L68.5,143 L68.5,153 L67,153 Z M72,143 L75,143 L75,153 L72,153 Z M78,143 L79.5,143 L79.5,153 L78,153 Z M83,143 L86,143 L86,153 L83,153 Z M89,143 L90.5,143 L90.5,153 L89,153 Z M94,143 L97,143 L97,153 L94,153 Z M100,143 L102,143 L102,153 L100,153 Z" />
+    </group>
+
+    <!-- Floating Blue Security Badge Top Right -->
+    <path
+        android:fillColor="#0755C9"
+        android:pathData="M234,32 L262,32 A11,11 0 0,1 273,43 L273,71 A11,11 0 0,1 262,82 L234,82 A11,11 0 0,1 223,71 L223,43 A11,11 0 0,1 234,32 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M248,44 L238,48.5 L238,56.5 C238,63 242.3,68.8 248,70.5 C253.7,68.8 258,63 258,56.5 L258,48.5 Z" />
+
+    <!-- Small Green Verified Check Circle -->
+    <path
+        android:fillColor="#DCFCE7"
+        android:pathData="M270,72 A9,9 0 1,1 269.9,72 Z" />
+    <path
+        android:strokeColor="#16A34A"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M266,81 L269,84 L274.5,78" />
+</vector>

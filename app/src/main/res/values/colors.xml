@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Exact Identra Screenshot Palette -->
+    <color name="primary_blue">#0755C9</color>
+    <color name="primary_blue_dark">#043D99</color>
+    <color name="dark_navy">#10275B</color>
+    <color name="light_blue">#EAF2FF</color>
+    <color name="soft_circle_blue">#EBF3FF</color>
+    <color name="bg_top">#F7FAFF</color>
+    <color name="bg_bottom">#EEF4FF</color>
+    <color name="text_gray">#64748B</color>
+    <color name="line_gray">#CBD5E1</color>
+    <color name="gold_chip">#FBBF24</color>
+    <color name="success_green">#16A34A</color>
+    <color name="success_bg">#DCFCE7</color>
+</resources>

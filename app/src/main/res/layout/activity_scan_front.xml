@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome_screen"
+    android:padding="20dp">
+
+    <!-- Top Header: Circular Back Button + "Step 1 of 4" -->
+    <RelativeLayout
+        android:id="@+id/topHeaderFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBackFront"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_circle_back_btn"
+            android:contentDescription="Back"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_chevron" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Step 1 of 4"
+            android:textColor="#0755C9"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 4 Separate Progress Bars (1st Dark Blue, 3 Light Inactive) -->
+    <LinearLayout
+        android:id="@+id/progressStepsFront"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/topHeaderFront"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="#0755C9" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="#DCE6F5" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="#DCE6F5" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#DCE6F5" />
+    </LinearLayout>
+
+    <!-- Bold Heading & Subtitle -->
+    <TextView
+        android:id="@+id/tvTitleFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressStepsFront"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Scan Front of CNIC"
+        android:textColor="#10275B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubtitleFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitleFront"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Place your CNIC inside the frame."
+        android:textColor="#64748B"
+        android:textSize="13sp" />
+
+    <!-- Camera Preview Box with Blue Corner Brackets & Mint CNIC -->
+    <RelativeLayout
+        android:id="@+id/cameraViewportFront"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_below="@id/tvSubtitleFront"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_camera_viewport"
+        android:padding="14dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="CNIC Front Frame"
+            android:src="@drawable/ic_cnic_front_scan_overlay" />
+
+        <!-- Bottom Hint Pill -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_hint_pill"
+            android:paddingStart="16dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="6dp"
+            android:text="Align all four corners within the frame"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <!-- Bottom Controls: Flashlight, Capture Camera, Gallery -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footerSecureFront"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Left: Flashlight -->
+        <LinearLayout
+            android:id="@+id/btnFlashFront"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_icon_square"
+                android:contentDescription="Flashlight"
+                android:padding="13dp"
+                android:src="@drawable/ic_flashlight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Flashlight"
+                android:textColor="#64748B"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Center: Large Blue Capture Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnCaptureFront"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:background="@drawable/bg_capture_outer_ring"
+                android:contentDescription="Capture CNIC Front"
+                android:padding="22dp"
+                android:src="@drawable/ic_camera_white" />
+        </LinearLayout>
+
+        <!-- Right: Gallery -->
+        <LinearLayout
+            android:id="@+id/btnGalleryFront"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_icon_square"
+                android:contentDescription="Gallery"
+                android:padding="13dp"
+                android:src="@drawable/ic_gallery_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Gallery"
+                android:textColor="#64748B"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Footer -->
+    <LinearLayout
+        android:id="@+id/footerSecureFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="Shield"
+            android:src="@drawable/ic_footer_shield" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your information is encrypted and secure"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

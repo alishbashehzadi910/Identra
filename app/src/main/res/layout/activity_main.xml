@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome_screen"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Top Blue Shield + Fingerprint Logo -->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="72dp"
+            android:contentDescription="@string/cd_logo"
+            android:src="@drawable/ic_identra_shield_logo" />
+
+        <!-- App Title: Identra -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/identra"
+            android:textColor="#0F2042"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle: Verify Identity. Build Trust. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/subtitle_text"
+            android:textColor="#0755C9"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Tilted ID Card Illustration -->
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/cd_hero_illustration"
+            android:src="@drawable/ic_id_card_hero" />
+
+        <!-- Description Text Above Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/description_text"
+            android:textColor="#5B6B8C"
+            android:textSize="15sp" />
+
+        <!-- Primary Royal Blue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStartVerification"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_primary_btn"
+            android:elevation="4dp"
+            android:text="@string/start_verification"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom Footer -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="@string/cd_shield"
+            android:src="@drawable/ic_footer_shield" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
